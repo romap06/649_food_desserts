@@ -145,10 +145,14 @@ The visualization below consists of a large scatter plot that shows the accessib
 median income by state. The states are split by the areas that have food deserts (orange colored points) and areas that don't (blue colored points).
 There is also a stacked racial distribution to examine the possible disparities at the state level.
 
-Tutorial: The visualizations are connected via States, so clicking on a point on the scatter plot that is an orange point (has a
+**Tutorial**: The visualizations are connected via States, so clicking on a point on the scatter plot that is an orange point (has a
 there is a food desert) the related blue point for the same state will also be selected. The rest of the points will become less visible.
 The race bar chart will also then filter via population make up for the selected state. Multiple points can be selected by holding
 on to the 'shift' key and click the points."""
+
+#other visuals
+st.write("""*For drilled down views of Michigan, by census tract, select from the drop down to the left. There are several additional
+factors explored such as the distribution of SNAP Benefits compared with the areas of Michigan labeled as a Food Desert.*""")
 
 #visuals
 st.altair_chart(final_combined_visuals)
