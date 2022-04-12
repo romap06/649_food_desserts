@@ -1,0 +1,6 @@
+
+#global install
+vega_datasets==0.9.0
+
+#code to run in terminal
+# pip3 install -r requirements.txt
