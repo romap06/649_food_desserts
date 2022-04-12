@@ -1,1 +1,3 @@
-# 649_food_desserts
+# Visualizing Food Deserts
+
+649 Final Project
