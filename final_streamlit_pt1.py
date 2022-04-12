@@ -37,7 +37,7 @@ click = alt.selection_multi(fields=['State'])
 
 #combined scatter plot
 scatter_plot = alt.Chart(final_state_level
-).mark_point(filled=True).encode(
+).mark_point(filled=True, stroke="white", strokeWidth=0.5).encode(
     x=alt.X("MedianIncome:Q", scale=alt.Scale(domain=[35000, 115000]), axis=alt.Axis(title="Median Income", gridOpacity=0.1)),
     y=alt.Y("Walk:Q", axis=alt.Axis(gridOpacity=0.1)),
     size=alt.Size("TotalPop:Q", legend=alt.Legend(title="Total Population")),
