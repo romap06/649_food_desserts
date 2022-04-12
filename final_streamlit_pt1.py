@@ -126,17 +126,29 @@ final_combined_visuals = combined_visuals.configure(background='Black'
 )
 
 ############## PAGE SET UP ##############
-#page title
+#why do food deserts matter
+st.header("Importance of Understanding Food Deserts")
+"""
+Food deserts have been defined by the CDC as areas that “lack access to affordable fruits, vegetables, whole grains,
+low-fat milk, and other foods that make up the full range of a healthy diet[1].” They have many underlying implications
+for the community varying from health conditions like diabetes in adults to children developing these conditions and lack
+of proper development. Several factors contribute to food deserts such as income/poverty rate of an area and accessibility
+to supermarkets. And given the socioeconomic factors and other disparities in society that contribute to the income distribution
+in the U.S. races are also disproportionately affected. According to the USDA “the percent of the population that is non-Hispanic Black
+is over twice as large in urban food deserts than in other urban areas[2].”
 
-#intro
-
-#why food deserts matter
-
+"""
 #visuals explanation and how to use
 st.header("Overall Distributions of Food Deserts")
 """
-Below is x that shows y and Overall Purpose. What each component is, why, and how to interact.
-"""
+The visualization below consists of a large scatter plot that shows the accessibility to supermarkets (via average walking distance) as a factor of
+median income by state. The states are split by the areas that have food deserts (orange colored points) and areas that don't (blue colored points).
+There is also a stacked racial distribution to examine the possible disparities at the state level.
+
+Tutorial: The visualizations are connected via States, so clicking on a point on the scatter plot that is an orange point (has a
+there is a food desert) the related blue point for the same state will also be selected. The rest of the points will become less visible.
+The race bar chart will also then filter via population make up for the selected state. Multiple points can be selected by holding
+on to the 'shift' key and click the points."""
 
 #visuals
 st.altair_chart(final_combined_visuals)
